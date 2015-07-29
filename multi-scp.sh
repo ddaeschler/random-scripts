@@ -13,8 +13,6 @@ username=$1
 remote_path=$2
 local_path=$3
 
-servers=()
-
 #collect the servers
 for i in $(seq 4 $#); do
     scp -r $username@${!i}:$remote_path ${local_path}_${!i}
