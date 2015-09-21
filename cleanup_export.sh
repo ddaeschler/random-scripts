@@ -1,0 +1,1 @@
+sed '/SQL SECURITY DEFINER/d' $1 > $2
